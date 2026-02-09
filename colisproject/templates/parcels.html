@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Liste des colis - ColisApp
+{% endblock %}
+
+{% block content %}
+    <h1>Colis liste:</h1>
+    <ul>
+        {% for c in colis %}
+            <li>{{ c }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Retour à l'accueil</a>
+{% endblock %}
